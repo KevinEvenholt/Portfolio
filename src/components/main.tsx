@@ -29,7 +29,7 @@ const Main = (props: Props) => {
         <p className="text-4xl font-serif md:text-6xl">Frontend Developer.</p>
         <div className="mt-4 md:w-2/3">
           <p className="text-lg opacity-80 font-serif lg:w-1/2">
-            I'm a junior frontend developer passionate about transforming ideas
+            I am a junior frontend developer passionate about transforming ideas
             into engaging user interfaces. I have experience in tackling
             challenging problems and delivering creative solutions that enhance
             user experiences.

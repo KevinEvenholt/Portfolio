@@ -37,7 +37,7 @@ const About = () => {
         />
         <div className="md:w-2/5 md:mt-10 lg:w-1/2 space-y-4 lg:space-y-6">
           <p className="text-xl font-serif leading-relaxed md:text-2xl md:leading-snug">
-            I’m a dedicated frontend developer with a passion for creating
+            I am a dedicated frontend developer with a passion for creating
             visually stunning and highly functional websites. My work is all
             about crafting immersive digital experiences that captivate users
             and leave a lasting impact.

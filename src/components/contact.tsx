@@ -33,7 +33,7 @@ const Contact = (props: Props) => {
       </div>
       <p className="text-lg font-serif lg:w-1/2">
         If my work resonates with you or you have an exciting project in mind,
-        let’s connect! I'm open to ambitious ventures and always happy to
+        let’s connect! I am open to ambitious ventures and always happy to
         discuss new opportunities or answer any questions you may have.
       </p>
       <div className="mt-10">
