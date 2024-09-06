@@ -11,7 +11,7 @@ function Footer({}: Props) {
       <div className="w-5/6 border-y border-y-white border-opacity-10 py-10 items-center justify-center ">
         <Socials />
       </div>
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center mb-8">
         <Link href="/">
           <Image src="/logo.svg" alt="Logo" width={100} height={100} />
         </Link>
