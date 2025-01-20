@@ -1,6 +1,40 @@
 import React from "react";
 
-const SkeletonCard = () => {
+interface ProjectCardProps {
+  title?: string;
+  description?: string;
+  imageUrl?: string;
+  link?: string;
+}
+
+const SkeletonCard: React.FC<ProjectCardProps> = ({
+  title,
+  description,
+  imageUrl,
+  link,
+}) => {
+  if (title && description && imageUrl && link) {
+    return (
+      <a
+        href={link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="block p-6 max-w-sm w-full mx-auto bg-gray-700 shadow-lg rounded-lg transform transition-transform hover:scale-105"
+      >
+        <div className="h-48 bg-gray-600 rounded-lg mb-4 relative overflow-hidden">
+          <img
+            src={imageUrl}
+            alt={title}
+            className="h-full w-full object-cover rounded-lg"
+          />
+        </div>
+        <h2 className="text-white text-2xl font-semibold mb-2">{title}</h2>
+        <p className="text-gray-300 text-lg leading-relaxed">{description}</p>
+      </a>
+    );
+  }
+
+  // Skeleton fallback
   return (
     <div className="p-6 max-w-sm w-full mx-auto bg-gray-700 shadow-lg rounded-lg space-y-4 animate-pulse">
       <div className="h-48 bg-gray-600 rounded-lg mb-4 relative overflow-hidden">

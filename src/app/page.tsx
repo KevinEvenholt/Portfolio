@@ -10,6 +10,16 @@ import Footer from "@/components/footer";
 
 type Props = {};
 
+const myProjects = [
+  {
+    title: "Tasshälsan",
+    description:
+      "Website for a dog grooming business made in react with tailwind css.",
+    imageUrl: "/tasshälsan.png",
+    link: "https://tasshalsan.se",
+  },
+];
+
 const Page = (props: Props) => {
   const [isFooterVisible, setIsFooterVisible] = useState(false);
 
@@ -46,7 +56,7 @@ const Page = (props: Props) => {
       </aside>
       <Main />
       <About />
-      <Projects />
+      <Projects projects={myProjects} />;
       <Contact />
       <Footer />
     </>
